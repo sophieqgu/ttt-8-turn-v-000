@@ -37,6 +37,6 @@ def turn(board)
     move(board, index, token = 'X')
   else
     puts "The position is taken, please enter another value:"
-    input = gets.to_i
+    turn(board)
   end
 end
