@@ -32,4 +32,10 @@ end
 
 def turn(board)
   puts 'Please enter 1-9:'
+  index = input_to_index(input)
+  if valid_move?(board, index)
+    move(board, index, token = 'X')
+  else
+    puts "The position is taken, please enter another value:"
+    
 end
